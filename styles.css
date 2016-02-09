@@ -1,0 +1,237 @@
+/* For home.html */
+.home {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    background-color: darkcyan;
+    font-family: Impact;
+    font-size: 80px;
+    font-style: oblique;
+    color:
+}
+
+.home div.sub {
+    float: left;
+    height: 100px;
+    padding-right: 120px;
+}
+
+.mainmenu {
+    
+}
+
+.mainmenu ul {
+    width: 1200px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.mainmenu li {
+    font-family: monospace;
+    font-size: 30px;
+    float: left;
+    width: 200px;
+}
+
+.mainmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainmenu li a:hover:not(.active) {
+    background-color: black;
+}
+
+.mainmenu .active {
+    background-color: darkgreen;
+}
+
+.main_news {
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main_news a:link {
+    font-family: monospace;
+    font-size: 30px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.rank table{
+    float: right;
+    background-color: #0B2F3A;
+    color: whitesmoke;
+}
+
+.rank th {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+    width: 60px;
+    height: auto;
+    background-color: #0A1B2A;
+}
+
+.rank th.club {
+    width: 200px;
+    background-color: #0A1B2A;
+}
+
+.rank td {
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.rank tr.degrade {
+    background-color: #0B615E;
+}
+
+
+/* For matchday.html */
+thead.matchday {
+    margin: auto;
+}
+
+.matchday {
+    width: 1200px;
+    height: 450px;
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    font-family: monospace;
+    text-align: center;
+}
+
+.matchday table{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.matchday thead th {
+    width: 100px;
+    padding:9px 0 7px; 
+    padding-top:10px; 
+    border:0; 
+    border:1px solid #E6E6E6; 
+    color:#888; 
+    font-size:11px; 
+    font-weight:normal; 
+    background-color:#F7F7F7; 
+    letter-spacing:-1px;
+}
+
+.matchday th.club {
+    width: 200px;
+    height: auto;
+}
+
+.matchday td {
+    border: 1px solid #E6E6E6;
+    border-left: none;
+}
+
+.matchday td.right {
+    border: 1px solid #E6E6E6;
+    border-right: none;
+}
+
+.matchday td.date {
+    font-weight: bold;
+}
+
+.matchday span.title {
+    font-size: 30px;
+    font-family: impact;
+}
+
+.club {
+    width: 1200px;
+    height: 450px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.club h1 {
+    margin: auto;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.club table{
+    margin: auto;
+    background-color: #0B2F3A;
+}
+
+.club th {
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+    width: auto;
+    height: auto;
+    background-color: #0B2161;
+    color: whitesmoke;
+}
+
+.club td {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: monospace;
+    background-color: white;
+}
+
+.club span.draw {
+    background-color:gray;
+    font-size:15px;
+    padding:5px;
+}
+
+.club span.win {
+    background-color:darkgreen;
+    font-size:15px;
+    padding:5px;
+}
+
+.club span.lose {
+    background-color:darkred;
+    font-size:15px;
+    padding:5px;
+}
+
+.pos_bournemouth { position:relative; }
+.pos_arsenal { position:relative; margin-left: 37px; }
+.pos_astonvilla { position:relative; margin-left: 37px; }
+.pos_chelsea { position:relative; margin-left: 37px; }
+.pos_crystalpalace { position:relative; margin-left: 37px; }
+.pos_everton { position:relative; margin-left: 37px; }
+.pos_leicester { position: relative; margin-left: 37px; }
+.pos_liverpool { position:relative; margin-left: 37px; }
+.pos_mancity { position:relative; margin-left: 37px; }
+.pos_manu { position:relative; margin-left: 37px; }
+
+.pos_newcastle { position: relative; }
+.pos_norwich { position: relative; margin-left: 37px; }
+.pos_southampton { position: relative; margin-left: 37px; }
+.pos_stokecity { position: relative; margin-left: 37px; }
+.pos_sunderland { position: relative; margin-left: 37px; }
+.pos_swansea { position: relative; margin-left: 37px; }
+.pos_tottenham { position: relative; margin-left: 37px; }
+.pos_watford { position: relative; margin-left: 37px; }
+.pos_westbromwich { position: relative; margin-left: 37px; }
+.pos_westham { position: relative; margin-left: 37px; }
