@@ -98,7 +98,8 @@
 }
 
 .rank tr.degrade {
-    background-color: #0B615E;
+    /*background-color: #0B615E;*/
+    background-color: #58D3F7;
 }
 
 
@@ -109,10 +110,10 @@ thead.matchday {
 
 .matchday {
     width: 1200px;
-    height: 450px;
+    height: 550px;
     margin: auto;
     margin-top: 20px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     font-family: monospace;
     text-align: center;
 }
@@ -157,6 +158,10 @@ thead.matchday {
 .matchday span.title {
     font-size: 30px;
     font-family: impact;
+}
+
+.matchday span.score {
+    font-weight: bold;
 }
 
 .club {
