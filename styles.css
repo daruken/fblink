@@ -272,3 +272,16 @@ thead.matchday {
     background-image: url('neymar.jpg');
     background-size: cover;
 }
+
+.app {
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Impact;
+    font-size: 80px;
+    font-style: oblique;
+    color: whitesmoke;
+    background-image: url('zidane.jpg');
+    background-size: cover;
+}
