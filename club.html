@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Football Link</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="information.js"></script>
 </head>
 
 <body>
@@ -50,58 +51,7 @@
             <tr class="degrade"><td>19</td><td>선더랜드</td><td>25</td><td>20</td><td><a href="http://www.safc.com" onclick="window.open(this.href); return false"><img src="club/sunderland_org.jpg" width="20px" height="20px"/></a></td></tr>
             <tr class="degrade"><td>20</td><td>아스톤빌라</td><td>25</td><td>16</td><td><a href="http://www.avfc.co.uk" onclick="window.open(this.href); return false"><img src="club/astonvilla_org.jpg" width="20px" height="20px"/></a></td></tr>
         </table>
-
-        <script>
-            var showFlag = false;
-            
-            function showAboutUs(){   
-                var divElement = document.createElement("DIV");
-                var textNode = document.createTextNode("Trio developers for a better world.");
-                divElement.setAttribute("style", "height:50px;background-color:black;color:whitesmoke;font-family:monospace;font-size:25px;padding:50px;text-align:center;");
-                    
-                divElement.appendChild(textNode);
-                document.body.appendChild(divElement);
-                
-                if(Boolean(showFlag == false))
-                {
-                    divElement.appendChild(textNode);
-                    document.body.appendChild(divElement);    
-                    showFlag = true;
-                }
-                else
-                {
-                    divElement.removeChild(textNode);
-                    document.body.removeChild(divElement);
-                    showFlag = false;
-                    window.location.reload();
-                }
-            }
-            
-            function showContactUs(){   
-                var divElement = document.createElement("DIV");
-                var textNode = document.createTextNode("Just call us. +82-10-8300-1827");
-                divElement.setAttribute("style", "height:50px;background-color:black;color:whitesmoke;font-family:monospace;font-size:25px;padding:50px;text-align:center;");
-                    
-                divElement.appendChild(textNode);
-                document.body.appendChild(divElement);
-                
-                if(Boolean(showFlag == false))
-                {
-                    divElement.appendChild(textNode);
-                    document.body.appendChild(divElement);    
-                    showFlag = true;
-                }
-                else
-                {
-                    divElement.removeChild(textNode);
-                    document.body.removeChild(divElement);
-                    showFlag = false;
-                    window.location.reload();
-                }
-            }
-
-        </script>
-        
+ 
         <div class="copyright">
             <ul>
                 @COPYRIGHT 2016
