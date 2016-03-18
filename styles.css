@@ -264,8 +264,7 @@ thead.matchday {
     font-size: 80px;
     font-style: oblique;
     color: whitesmoke;
-    background-image: url('neymar.jpg');
-    background-size: cover;
+    background-color: black;
 }
 
 .app {
