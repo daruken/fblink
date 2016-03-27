@@ -5,6 +5,7 @@
     <title>Football Link</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="information.js"></script>
+    <script type="text/javascript" src="fb_api.js"></script>
 </head>
 
 <body>
@@ -23,39 +24,189 @@
         </ul>
         </div>
         
+        <img src="club.png" style="float:left;margin-left:100px;">
+        
         <table>
-            <th>순위</th>
-            <th class="clubname">클럽</th>		
-            <th>경기 수</th>
-            <th>승점</th>
-            <th>홈페이지</th>
-
-            <tr class="championsleague"><td>1</td><td>레스터 시티</td><td>25</td><td>53</td><td><a href="http://www.lcfc.com" onclick="window.open(this.href); return false"><img src="club/leicester_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr class="championsleague"><td>2</td><td>토트넘 핫스퍼</td><td>25</td><td>48</td><td><a href="http://www.tottenhamhotspur.com" onclick="window.open(this.href); return false"><img src="club/tottenham_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr class="championsleague"><td>3</td><td>아스날</td><td>25</td><td>48</td><td><a href="http://www.arsenal.com" onclick="window.open(this.href); return false"><img src="club/arsenal_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr class="championsleague"><td>4</td><td>맨체스터 시티</td><td>25</td><td>47</td><td><a href="http://www.mcfc.co.uk" onclick="window.open(this.href); return false"><img src="club/mancity_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>5</td><td>맨체스터 유나이티드</td><td>25</td><td>41</td><td><a href="http://www.manutd.com" onclick="window.open(this.href); return false"><img src="club/manu_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>6</td><td>웨스트햄 유나이티드</td><td>25</td><td>39</td><td><a href="http://www.whufc.com" onclick="window.open(this.href); return false"><img src="club/westham_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>7</td><td>사우샘프턴</td><td>25</td><td>37</td><td><a href="http://www.safc.com" onclick="window.open(this.href); return false"><img src="club/southampton_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>8</td><td>에버튼</td><td>25</td><td>35</td><td><a href="http://www.evertonfc.com/home" onclick="window.open(this.href); return false"><img src="club/everton_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>9</td><td>리버풀</td><td>25</td><td>35</td><td><a href="http://www.liverpoolfc.tv" onclick="window.open(this.href); return false"><img src="club/liverpool_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>10</td><td>왓포드</td><td>25</td><td>33</td><td><a href="http://www.watfordfc.com" onclick="window.open(this.href); return false"><img src="club/watford_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>11</td><td>스토크 시티</td><td>25</td><td>33</td><td><a href="http://www.stokecityfc.com" onclick="window.open(this.href); return false"><img src="club/stokecity_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>12</td><td>크리스탈 팰리스</td><td>25</td><td>32</td><td><a href="http://www.cpfc.co.uk" onclick="window.open(this.href); return false"><img src="club/cp_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>13</td><td>첼시</td><td>25</td><td>30</td><td><a href="http://www.chelseafc.com" onclick="window.open(this.href); return false"><img src="club/chelsea_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>14</td><td>웨스트 브롬위치</td><td>25</td><td>29</td><td><a href="http://www.wba.co.uk" onclick="window.open(this.href); return false"><img src="club/westbromwich_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>15</td><td>AFC 본머스</td><td>25</td><td>28</td><td><a href="http://www.afcb.co.uk" onclick="window.open(this.href); return false"><img src="club/bournemouth_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>16</td><td>스완지 시티</td><td>25</td><td>27</td><td><a href="http://www.swanseacity.net" onclick="window.open(this.href); return false"><img src="club/swansea_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr><td>17</td><td>뉴캐슬 유나이티드</td><td>25</td><td>24</td><td><a href="http://www.nufc.co.uk" onclick="window.open(this.href); return false"><img src="club/newcastle_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr class="degrade"><td>18</td><td>노리치 시티</td><td>25</td><td>23</td><td><a href="http://www.canaries.co.uk" onclick="window.open(this.href); return false"><img src="club/norwich_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr class="degrade"><td>19</td><td>선더랜드</td><td>25</td><td>20</td><td><a href="http://www.safc.com" onclick="window.open(this.href); return false"><img src="club/sunderland_org.jpg" width="20px" height="20px"/></a></td></tr>
-            <tr class="degrade"><td>20</td><td>아스톤빌라</td><td>25</td><td>16</td><td><a href="http://www.avfc.co.uk" onclick="window.open(this.href); return false"><img src="club/astonvilla_org.jpg" width="20px" height="20px"/></a></td></tr>
+            <th>Rank</th>
+            <th class="clubname">Club</th>		
+            <th>Match Count</th>
+            <th>Points</th>
+            <th>Win</th>
+            <th>Draw</th>
+            <th>Lose</th>
+            
+            <tr class="championsleague"><td>1</td><td id="1st_Club"></td><td id="1st_MatchCount"></td><td id="1st_Points"></td><td id="1st_WinCount"></td><td id="1st_DrawCount"></td><td id="1st_LoseCount"></td></tr>
+            <tr class="championsleague"><td>2</td><td id="2nd_Club"></td><td id="2nd_MatchCount"></td><td id="2nd_Points"></td><td id="2nd_WinCount"></td><td id="2nd_DrawCount"></td><td id="2nd_LoseCount"></td></tr>
+            <tr class="championsleague"><td>3</td><td id="3rd_Club"></td><td id="3rd_MatchCount"></td><td id="3rd_Points"></td><td id="3rd_WinCount"></td><td id="3rd_DrawCount"></td><td id="3rd_LoseCount"></td></tr>
+            <tr class="championsleague"><td>4</td><td id="4th_Club"></td><td id="4th_MatchCount"></td><td id="4th_Points"></td><td id="4th_WinCount"></td><td id="4th_DrawCount"></td><td id="4th_LoseCount"></td></tr>
+            <tr><td>5</td><td id="5th_Club"></td><td id="5th_MatchCount"></td><td id="5th_Points"></td><td id="5th_WinCount"></td><td id="5th_DrawCount"></td><td id="5th_LoseCount"></td></tr>
+            <tr><td>6</td><td id="6th_Club"></td><td id="6th_MatchCount"></td><td id="6th_Points"></td><td id="6th_WinCount"></td><td id="6th_DrawCount"></td><td id="6th_LoseCount"></td></tr>
+            <tr><td>7</td><td id="7th_Club"></td><td id="7th_MatchCount"></td><td id="7th_Points"></td><td id="7th_WinCount"></td><td id="7th_DrawCount"></td><td id="7th_LoseCount"></td></tr>
+            <tr><td>8</td><td id="8th_Club"></td><td id="8th_MatchCount"></td><td id="8th_Points"></td><td id="8th_WinCount"></td><td id="8th_DrawCount"></td><td id="8th_LoseCount"></td></tr>
+            <tr><td>9</td><td id="9th_Club"></td><td id="9th_MatchCount"></td><td id="9th_Points"></td><td id="9th_WinCount"></td><td id="9th_DrawCount"></td><td id="9th_LoseCount"></td></tr>
+            <tr><td>10</td><td id="10th_Club"></td><td id="10th_MatchCount"></td><td id="10th_Points"></td><td id="10th_WinCount"></td><td id="10th_DrawCount"></td><td id="10th_LoseCount"></td></tr>
+            <tr><td>11</td><td id="11th_Club"></td><td id="11th_MatchCount"></td><td id="11th_Points"></td><td id="11th_WinCount"></td><td id="11th_DrawCount"></td><td id="11th_LoseCount"></td></tr>
+            <tr><td>12</td><td id="12th_Club"></td><td id="12th_MatchCount"></td><td id="12th_Points"></td><td id="12th_WinCount"></td><td id="12th_DrawCount"></td><td id="12th_LoseCount"></td></tr>
+            <tr><td>13</td><td id="13th_Club"></td><td id="13th_MatchCount"></td><td id="13th_Points"></td><td id="13th_WinCount"></td><td id="13th_DrawCount"></td><td id="13th_LoseCount"></td></tr>
+            <tr><td>14</td><td id="14th_Club"></td><td id="14th_MatchCount"></td><td id="14th_Points"></td><td id="14th_WinCount"></td><td id="14th_DrawCount"></td><td id="14th_LoseCount"></td></tr>
+            <tr><td>15</td><td id="15th_Club"></td><td id="15th_MatchCount"></td><td id="15th_Points"></td><td id="15th_WinCount"></td><td id="15th_DrawCount"></td><td id="15th_LoseCount"></td></tr>
+            <tr><td>16</td><td id="16th_Club"></td><td id="16th_MatchCount"></td><td id="16th_Points"></td><td id="16th_WinCount"></td><td id="16th_DrawCount"></td><td id="16th_LoseCount"></td></tr>
+            <tr><td>17</td><td id="17th_Club"></td><td id="17th_MatchCount"></td><td id="17th_Points"></td><td id="17th_WinCount"></td><td id="17th_DrawCount"></td><td id="17th_LoseCount"></td></tr>
+            <tr class="degrade"><td>18</td><td id="18th_Club"></td><td id="18th_MatchCount"></td><td id="18th_Points"></td><td id="18th_WinCount"></td><td id="18th_DrawCount"></td><td id="18th_LoseCount"></td></tr>
+            <tr class="degrade"><td>19</td><td id="19th_Club"></td><td id="19th_MatchCount"></td><td id="19th_Points"></td><td id="19th_WinCount"></td><td id="19th_DrawCount"></td><td id="19th_LoseCount"></td></tr>
+            <tr class="degrade"><td>20</td><td id="20th_Club"></td><td id="20th_MatchCount"></td><td id="20th_Points"></td><td id="20th_WinCount"></td><td id="20th_DrawCount"></td><td id="20th_LoseCount"></td></tr>
         </table>
  
+        <p id="demo"></p>
+        
+        <script>
+            var objRank = JSON.parse(httpGet("http://footballlinkapi.azurewebsites.net/api/clubs"));
+            
+            document.getElementById("1st_Club").innerHTML = objRank[0].ClubName;
+            document.getElementById("1st_MatchCount").innerHTML = objRank[0].MatchCount;
+            document.getElementById("1st_Points").innerHTML = objRank[0].Points;
+            document.getElementById("1st_WinCount").innerHTML = objRank[0].WinCount;
+            document.getElementById("1st_DrawCount").innerHTML = objRank[0].DrawCount;
+            document.getElementById("1st_LoseCount").innerHTML = objRank[0].LoseCount;
+            
+            document.getElementById("2nd_Club").innerHTML = objRank[1].ClubName;
+            document.getElementById("2nd_MatchCount").innerHTML = objRank[1].MatchCount;
+            document.getElementById("2nd_Points").innerHTML = objRank[1].Points;
+            document.getElementById("2nd_WinCount").innerHTML = objRank[1].WinCount;
+            document.getElementById("2nd_DrawCount").innerHTML = objRank[1].DrawCount;
+            document.getElementById("2nd_LoseCount").innerHTML = objRank[1].LoseCount;
+            
+            document.getElementById("3rd_Club").innerHTML = objRank[2].ClubName;
+            document.getElementById("3rd_MatchCount").innerHTML = objRank[2].MatchCount;
+            document.getElementById("3rd_Points").innerHTML = objRank[2].Points;
+            document.getElementById("3rd_WinCount").innerHTML = objRank[2].WinCount;
+            document.getElementById("3rd_DrawCount").innerHTML = objRank[2].DrawCount;
+            document.getElementById("3rd_LoseCount").innerHTML = objRank[2].LoseCount;
+            
+            document.getElementById("4th_Club").innerHTML = objRank[3].ClubName;
+            document.getElementById("4th_MatchCount").innerHTML = objRank[3].MatchCount;
+            document.getElementById("4th_Points").innerHTML = objRank[3].Points;
+            document.getElementById("4th_WinCount").innerHTML = objRank[3].WinCount;
+            document.getElementById("4th_DrawCount").innerHTML = objRank[3].DrawCount;
+            document.getElementById("4th_LoseCount").innerHTML = objRank[3].LoseCount;
+            
+            document.getElementById("5th_Club").innerHTML = objRank[4].ClubName;
+            document.getElementById("5th_MatchCount").innerHTML = objRank[4].MatchCount;
+            document.getElementById("5th_Points").innerHTML = objRank[4].Points;
+            document.getElementById("5th_WinCount").innerHTML = objRank[4].WinCount;
+            document.getElementById("5th_DrawCount").innerHTML = objRank[4].DrawCount;
+            document.getElementById("5th_LoseCount").innerHTML = objRank[4].LoseCount;
+            
+            document.getElementById("6th_Club").innerHTML = objRank[5].ClubName;
+            document.getElementById("6th_MatchCount").innerHTML = objRank[5].MatchCount;
+            document.getElementById("6th_Points").innerHTML = objRank[5].Points;
+            document.getElementById("6th_WinCount").innerHTML = objRank[5].WinCount;
+            document.getElementById("6th_DrawCount").innerHTML = objRank[5].DrawCount;
+            document.getElementById("6th_LoseCount").innerHTML = objRank[5].LoseCount;
+            
+            document.getElementById("7th_Club").innerHTML = objRank[6].ClubName;
+            document.getElementById("7th_MatchCount").innerHTML = objRank[6].MatchCount;
+            document.getElementById("7th_Points").innerHTML = objRank[6].Points;
+            document.getElementById("7th_WinCount").innerHTML = objRank[6].WinCount;
+            document.getElementById("7th_DrawCount").innerHTML = objRank[6].DrawCount;
+            document.getElementById("7th_LoseCount").innerHTML = objRank[6].LoseCount;
+            
+            document.getElementById("8th_Club").innerHTML = objRank[7].ClubName;
+            document.getElementById("8th_MatchCount").innerHTML = objRank[7].MatchCount;
+            document.getElementById("8th_Points").innerHTML = objRank[7].Points;
+            document.getElementById("8th_WinCount").innerHTML = objRank[7].WinCount;
+            document.getElementById("8th_DrawCount").innerHTML = objRank[7].DrawCount;
+            document.getElementById("8th_LoseCount").innerHTML = objRank[7].LoseCount;
+            
+            document.getElementById("9th_Club").innerHTML = objRank[8].ClubName;
+            document.getElementById("9th_MatchCount").innerHTML = objRank[8].MatchCount;
+            document.getElementById("9th_Points").innerHTML = objRank[8].Points;
+            document.getElementById("9th_WinCount").innerHTML = objRank[8].WinCount;
+            document.getElementById("9th_DrawCount").innerHTML = objRank[8].DrawCount;
+            document.getElementById("9th_LoseCount").innerHTML = objRank[8].LoseCount;
+            
+            document.getElementById("10th_Club").innerHTML = objRank[9].ClubName;
+            document.getElementById("10th_MatchCount").innerHTML = objRank[9].MatchCount;
+            document.getElementById("10th_Points").innerHTML = objRank[9].Points;
+            document.getElementById("10th_WinCount").innerHTML = objRank[9].WinCount;
+            document.getElementById("10th_DrawCount").innerHTML = objRank[9].DrawCount;
+            document.getElementById("10th_LoseCount").innerHTML = objRank[9].LoseCount;
+            
+            document.getElementById("11th_Club").innerHTML = objRank[10].ClubName;
+            document.getElementById("11th_MatchCount").innerHTML = objRank[10].MatchCount;
+            document.getElementById("11th_Points").innerHTML = objRank[10].Points;
+            document.getElementById("11th_WinCount").innerHTML = objRank[10].WinCount;
+            document.getElementById("11th_DrawCount").innerHTML = objRank[10].DrawCount;
+            document.getElementById("11th_LoseCount").innerHTML = objRank[10].LoseCount;
+            
+            document.getElementById("12th_Club").innerHTML = objRank[11].ClubName;
+            document.getElementById("12th_MatchCount").innerHTML = objRank[11].MatchCount;
+            document.getElementById("12th_Points").innerHTML = objRank[11].Points;
+            document.getElementById("12th_WinCount").innerHTML = objRank[11].WinCount;
+            document.getElementById("12th_DrawCount").innerHTML = objRank[11].DrawCount;
+            document.getElementById("12th_LoseCount").innerHTML = objRank[11].LoseCount;
+            
+            document.getElementById("13th_Club").innerHTML = objRank[12].ClubName;
+            document.getElementById("13th_MatchCount").innerHTML = objRank[12].MatchCount;
+            document.getElementById("13th_Points").innerHTML = objRank[12].Points;
+            document.getElementById("13th_WinCount").innerHTML = objRank[12].WinCount;
+            document.getElementById("13th_DrawCount").innerHTML = objRank[12].DrawCount;
+            document.getElementById("13th_LoseCount").innerHTML = objRank[12].LoseCount;
+            
+            document.getElementById("14th_Club").innerHTML = objRank[13].ClubName;
+            document.getElementById("14th_MatchCount").innerHTML = objRank[13].MatchCount;
+            document.getElementById("14th_Points").innerHTML = objRank[13].Points;
+            document.getElementById("14th_WinCount").innerHTML = objRank[13].WinCount;
+            document.getElementById("14th_DrawCount").innerHTML = objRank[13].DrawCount;
+            document.getElementById("14th_LoseCount").innerHTML = objRank[13].LoseCount;
+            
+            document.getElementById("15th_Club").innerHTML = objRank[14].ClubName;
+            document.getElementById("15th_MatchCount").innerHTML = objRank[14].MatchCount;
+            document.getElementById("15th_Points").innerHTML = objRank[14].Points;
+            document.getElementById("15th_WinCount").innerHTML = objRank[14].WinCount;
+            document.getElementById("15th_DrawCount").innerHTML = objRank[14].DrawCount;
+            document.getElementById("15th_LoseCount").innerHTML = objRank[14].LoseCount;
+            
+            document.getElementById("16th_Club").innerHTML = objRank[15].ClubName;
+            document.getElementById("16th_MatchCount").innerHTML = objRank[15].MatchCount;
+            document.getElementById("16th_Points").innerHTML = objRank[15].Points;
+            document.getElementById("16th_WinCount").innerHTML = objRank[15].WinCount;
+            document.getElementById("16th_DrawCount").innerHTML = objRank[15].DrawCount;
+            document.getElementById("16th_LoseCount").innerHTML = objRank[15].LoseCount;
+            
+            document.getElementById("17th_Club").innerHTML = objRank[16].ClubName;
+            document.getElementById("17th_MatchCount").innerHTML = objRank[16].MatchCount;
+            document.getElementById("17th_Points").innerHTML = objRank[16].Points;
+            document.getElementById("17th_WinCount").innerHTML = objRank[16].WinCount;
+            document.getElementById("17th_DrawCount").innerHTML = objRank[16].DrawCount;
+            document.getElementById("17th_LoseCount").innerHTML = objRank[16].LoseCount;
+            
+            document.getElementById("18th_Club").innerHTML = objRank[17].ClubName;
+            document.getElementById("18th_MatchCount").innerHTML = objRank[17].MatchCount;
+            document.getElementById("18th_Points").innerHTML = objRank[17].Points;
+            document.getElementById("18th_WinCount").innerHTML = objRank[17].WinCount;
+            document.getElementById("18th_DrawCount").innerHTML = objRank[17].DrawCount;
+            document.getElementById("18th_LoseCount").innerHTML = objRank[17].LoseCount;
+            
+            document.getElementById("19th_Club").innerHTML = objRank[18].ClubName;
+            document.getElementById("19th_MatchCount").innerHTML = objRank[18].MatchCount;
+            document.getElementById("19th_Points").innerHTML = objRank[18].Points;
+            document.getElementById("19th_WinCount").innerHTML = objRank[18].WinCount;
+            document.getElementById("19th_DrawCount").innerHTML = objRank[18].DrawCount;
+            document.getElementById("19th_LoseCount").innerHTML = objRank[18].LoseCount;
+            
+            document.getElementById("20th_Club").innerHTML = objRank[19].ClubName;
+            document.getElementById("20th_MatchCount").innerHTML = objRank[19].MatchCount;
+            document.getElementById("20th_Points").innerHTML = objRank[19].Points;
+            document.getElementById("20th_WinCount").innerHTML = objRank[19].WinCount;
+            document.getElementById("20th_DrawCount").innerHTML = objRank[19].DrawCount;
+            document.getElementById("20th_LoseCount").innerHTML = objRank[19].LoseCount;
+        </script>
+        
         <div class="copyright">
             <ul>
                 @COPYRIGHT 2016
-            <li><a href="help.html">HELP</a></li>
+            <li onclick="showHelp()"><a>HELP</a></li>
             <li onclick="showContactUs()"><a>CONTACT US</a></li>
             <li onclick="showAboutUs()"><a>ABOUT US</a></li>
             </ul>
